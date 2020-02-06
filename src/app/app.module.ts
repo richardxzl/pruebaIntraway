@@ -1,8 +1,9 @@
+// Angular
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 
 // Routes
 import { APP_ROUTING } from './app.routes';
@@ -22,6 +23,8 @@ import { ApiComponent } from './components/api/api.component';
 import { BocaComponent } from './components/input/boca/boca.component';
 import { RiverComponent } from './components/input/river/river.component';
 import { NavComponent } from './components/nav/nav.component';
+
+// Material Modules
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
