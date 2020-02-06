@@ -1,1 +1,29 @@
-<p class="animated fadeIn fast">api works!</p>
+<div class="text-center animated fadeIn fast">
+	<h1>Third Component</h1><hr>
+</div>
+
+<div class="justify-content-md-center form-inline animated fadeIn fast">
+  <div class="form-group mx-sm-3 mb-2">
+    <input type="text" class="form-control" placeholder="Put the user ID" #textId>
+  </div>
+  <button class="btn btn-primary mb-2" (click)="getUser(textId.value)">Get user</button>
+</div>
+
+<hr>
+
+<div *ngIf="notFound" class="alert alert-danger mx-auto col-6 animated fadeIn fast" role="alert mb-3">
+  User not found
+</div>
+
+<div class="mx-auto card border-info animated fadeIn fast" *ngIf="user" style="max-width: 20rem;">
+  <div class="card-header bg-transparent border-info text-center">
+  	<h5>{{ user.name }}</h5>
+  </div>
+  <div class="card-body">
+    <p class="card-text"><b>Username:</b> {{ user.username }}</p>
+    <p class="card-text"><b>Address:</b> {{ user.address.city }}</p>
+    <p class="card-text"><b>Phone:</b> {{ user.phone}}</p>
+    <p class="card-text"><b>Email:</b> {{ user.email}}</p>
+  </div>
+</div>
+
