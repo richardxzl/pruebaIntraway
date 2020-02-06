@@ -1,0 +1,22 @@
+<div class="text-center animated fadeIn fast">
+	<h1>Second Component</h1><hr>
+</div>
+
+<table class="table animated fadeIn fast table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Type</th>
+      <th scope="col">Review</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let game of games">
+      <th scope="row"> {{ game.id }} </th>
+      <td>{{ game.name }}</td>
+      <td>{{ game.type }}</td>
+      <td>{{ game.value }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,29 @@
+<div>
+	<div class="row">
+		<div class="col">
+	    	<div class="card">
+				  <h5 class="card-header">Boca Jr</h5> 
+				  <div class="card-body">
+				  	<!-- Call component boca -->
+				    <app-boca [riverText]="riverTxtValue" [riverClick]="riverClick"(ontextFromBoca)="updateInBocaValue($event)"></app-boca>
+				  </div>
+			</div>
+    </div>
+
+    <div class="col">
+		 	<div class="card">
+			  <h5 class="card-header">River Plate</h5>
+			  <div class="card-body">
+			  	<!-- Valid if it exists to show -->
+			  	<div *ngIf="bocaTextBoxValue" class="alert alert-primary text-center" role="alert">
+				  	<b>{{bocaTextBoxValue}}</b> 
+					</div>
+			  	<div class="input-group mb-3">
+				  	<input [(ngModel)]="riverTxtValue" placeholder="Text to Boca" type="text" class="form-control">
+					</div>
+			    <button (click)="onRiverButtonClick()" type="button" class="btn btn-danger">River Click</button>
+			  </div>
+			</div>
+		</div>
+  </div>
+</div>

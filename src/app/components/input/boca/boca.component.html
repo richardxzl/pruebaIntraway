@@ -1,0 +1,14 @@
+<!-- Valid if it exists to show River textbox value -->
+<div *ngIf="riverTextBoxValue" class="alert alert-danger text-center" role="alert">
+  <b>{{riverTextBoxValue}}</b> 
+</div>
+
+<!-- Boca input to River -->
+<div class="input-group mb-3">
+	<input [(ngModel)]="bocaTextBoxValue" placeholder="Text to River" type="text" class="form-control">  	
+</div>
+
+<button (click)="passTextValueToRiver()" type="button" class="btn btn-primary">Send textbox to River</button>
+
+<!-- Valid if it exists to show River click count -->
+<span *ngIf="clickCount" class="badge badge-info ml-2">{{clickCount}}</span>
