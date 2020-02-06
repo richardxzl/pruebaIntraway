@@ -3,11 +3,10 @@ import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
-  selector: 'app-api',
-  templateUrl: './api.component.html',
-  styleUrls: ['./api.component.css']
+  selector: 'app-user',
+  templateUrl: './user.component.html'
 })
-export class ApiComponent implements OnInit {
+export class UserComponent implements OnInit {
 
   notFound = false;
   user: User
@@ -17,7 +16,7 @@ export class ApiComponent implements OnInit {
   ngOnInit() {
   }
 
-  getUser(userId: string) {
+  public getUser(userId: string): void {
     this.notFound = false;
     this.user = null;
 

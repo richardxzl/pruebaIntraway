@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tabla',
-  templateUrl: './tabla.component.html',
-  styleUrls: ['./tabla.component.css']
+  selector: 'app-table',
+  templateUrl: './table.component.html',
+  styleUrls: ['./table.component.css']
 })
-export class TablaComponent implements OnInit {
+export class TableComponent implements OnInit {
 
   private games:any[] = [
     {

@@ -19,11 +19,11 @@ export class BocaComponent implements OnInit {
     this.riverClick.subscribe(() => this.incrementValue());
   }
 
-  incrementValue() {
+  private incrementValue(): void {
     this.clickCount = this.clickCount + 1;
   }
   
-  passTextValueToRiver() {
+  private passTextValueToRiver(): void {
     this.passToRiver.emit(this.bocaTextBoxValue);
   }
 

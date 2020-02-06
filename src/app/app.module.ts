@@ -1,5 +1,4 @@
 // Angular
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -8,21 +7,20 @@ import { HttpClientModule } from '@angular/common/http';
 // Routes
 import { APP_ROUTING } from './app.routes';
 
-// Services
 
 // Components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { BodyComponent } from './components/body/body.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/layout/header/header.component';
+import { BodyComponent } from './components/layout/body/body.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { InputComponent } from './components/input/input.component';
-import { TablaComponent } from './components/tabla/tabla.component';
-import { ApiComponent } from './components/api/api.component';
+import { TableComponent } from './components/table/table.component';
+import { UserComponent } from './components/user/user.component';
 import { BocaComponent } from './components/input/boca/boca.component';
 import { RiverComponent } from './components/input/river/river.component';
-import { NavComponent } from './components/nav/nav.component';
+import { NavComponent } from './components/layout/nav/nav.component';
 
 // Material Modules
 import { LayoutModule } from '@angular/cdk/layout';
@@ -41,8 +39,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HomeComponent,
     InputComponent,
-    TablaComponent,
-    ApiComponent,
+    TableComponent,
+    UserComponent,
     BocaComponent,
     RiverComponent,
     NavComponent
